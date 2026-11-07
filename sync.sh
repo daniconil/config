@@ -6,7 +6,8 @@ ROOT=/home/daniel/Code/config-sync
 # Copia los archivos desde su ubicación original al repo
 cp /home/daniel/.pi/fallback-chains.json "$ROOT/.pi/"
 cp /home/daniel/.pi/agent/autorouter.json "$ROOT/.pi/agent/"
-cp /home/daniel/.zshrc "$ROOT/"
+# .zshrc: elimina líneas de secretos antes de copiar al repo
+grep -v -E '^(export )?(NGROK_AUTHTOKEN|NVIDIA_API_KEY)=' /home/daniel/.zshrc > "$ROOT/.zshrc"
 
 cd "$ROOT"
 

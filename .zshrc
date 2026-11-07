@@ -118,11 +118,10 @@ export EDITOR='vim'
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 
-# Ngrok Token
-export NGROK_AUTHTOKEN=NGROK_AUTHTOKEN_REDACTED
-
-# NVIDIA API Key
-export NVIDIA_API_KEY=NVIDIA_API_KEY_REDACTED
+# Secrets locales (NO en git)
+if [ -f "$HOME/.config/zsh/secrets" ]; then
+  source "$HOME/.config/zsh/secrets"
+fi
 
 #fi
 
