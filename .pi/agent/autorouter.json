@@ -1,0 +1,34 @@
+{
+  "classifierType": "heuristic",
+  "defaultModel": {
+    "model": "openai/gpt-6.1-sol",
+    "thinkingLevel": "high"
+  },
+  "tiers": {
+    "SIMPLE": {
+      "model": "fallback/simple",
+      "thinkingLevel": "off"
+    },
+    "MEDIUM": {
+      "model": "openai/gpt-6.1-terra",
+      "thinkingLevel": "medium"
+    },
+    "COMPLEX": {
+      "model": "openai/gpt-6.1-sol",
+      "thinkingLevel": "high"
+    },
+    "REASONING": {
+      "model": "openai/gpt-6.1-sol",
+      "thinkingLevel": "max"
+    }
+  },
+  "keywordTierRules": [
+    { "keywords": ["usa luna", "gpt-6-luna", "rápido", "velocidad", "simple"], "tier": "SIMPLE" },
+    { "keywords": ["usa kimi", "kimi-k3", "razonamiento medio", "medium"], "tier": "MEDIUM" },
+    { "keywords": ["usa sol", "gpt-6.1 sol", "usa gpt-6.1 sol", "razonamiento alto", "usa openai sol", "high"], "tier": "COMPLEX" },
+    { "keywords": ["usa sol max", "gpt-6.1 sol max", "máxima potencia", "razonamiento máximo", "auditoría de seguridad", "analiza exhaustivamente", "legal", "jurídico", "max"], "tier": "REASONING" },
+    { "keywords": ["refactorización profunda"], "tier": "COMPLEX" }
+  ],
+  "escalationKeywords": ["PI ESCALATE"],
+  "questionReply": { "enabled": true }
+}
