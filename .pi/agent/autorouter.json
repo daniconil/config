@@ -23,10 +23,10 @@
     }
   },
   "keywordTierRules": [
-    { "keywords": ["usa luna", "gpt-6-luna", "rápido", "velocidad", "simple"], "tier": "SIMPLE" },
-    { "keywords": ["usa kimi", "kimi-k3", "razonamiento medio", "medium"], "tier": "MEDIUM" },
-    { "keywords": ["usa sol", "gpt-6.1 sol", "usa gpt-6.1 sol", "razonamiento alto", "usa openai sol", "high"], "tier": "COMPLEX" },
-    { "keywords": ["usa sol max", "gpt-6.1 sol max", "máxima potencia", "razonamiento máximo", "auditoría de seguridad", "analiza exhaustivamente", "legal", "jurídico", "max"], "tier": "REASONING" },
+    { "keywords": ["usa fallback simple", "fallback/simple", "usa luna", "gpt-6-luna", "rápido", "velocidad", "simple"], "tier": "SIMPLE" },
+    { "keywords": ["usa terra", "gpt-6.1-terra", "gpt-6.1 terra", "usa openai terra", "razonamiento medio", "medium"], "tier": "MEDIUM" },
+    { "keywords": ["usa sol", "gpt-6.1-sol", "gpt-6.1 sol", "usa gpt-6.1 sol", "razonamiento alto", "usa openai sol", "high"], "tier": "COMPLEX" },
+    { "keywords": ["usa sol max", "gpt-6.1-sol max", "gpt-6.1 sol max", "máxima potencia", "razonamiento máximo", "auditoría de seguridad", "analiza exhaustivamente", "legal", "jurídico", "max"], "tier": "REASONING" },
     { "keywords": ["refactorización profunda"], "tier": "COMPLEX" }
   ],
   "escalationKeywords": ["PI ESCALATE"],
